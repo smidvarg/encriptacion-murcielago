@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("../Recursos/fondo-matrix.jpg");
+  background-size: cover;
+}
+
+/*Nav Bar*/
+
+header {
+  margin-bottom: 20px;
+  width: 100%;
+  background: rgba(34, 49, 63, 1);
+  justify-content: space-around;
+  display: flex;
+}
+
+.titulo-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+header h2 {
+  color: rgba(35, 203, 167, 1);
+  font-size: 35px;
+  padding: 10px;
+}
+
+header img {
+  width: 100px;
+  height: 50px;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+header nav ul li {
+  padding: 10px;
+  margin-top: 8px;
+  list-style: none;
+  background: rgba(34, 49, 63, 1);
+  transition: .4s ease;
+  border: none;
+  border-radius: 10px;
+}
+
+header nav ul li:hover {
+  background: rgba(52, 73, 94, 1);
+}
+
+header nav ul li a {
+  font-family: 'Audiowide';
+  font-size: 18px;
+  text-decoration: none;
+  color:rgba(35, 203, 167, 1);
+}
+
+/*Contenido*/
+
+
+
+.general {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Sección de Comunicación*/
+
+.comunicacion {
+  background: rgba(189, 195, 199, 0.9);
+  border-radius: 10px;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.comunicacion img {
+  width: 30%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.comunicacion .sec-gen {
+  display: flex;
+  padding: 15px;
+  font-family: 'Unica One';
+  flex-direction: column;
+  text-align: center;
+}
+
+.comunicacion .sec-gen h2 {
+  font-size: 50px;
+  color: rgba(36, 37, 42, 1);
+}
+
+.comunicacion .sec-gen p {
+  font-size: 30px;
+  color: rgba(36, 37, 42, 1);
+  text-align: justify;
+}
+
+/*Proceso de Codificado*/
+
+.contenedor-form-1 {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: auto;
+  text-align: center;
+  background: rgba(36, 37, 42, 0.9);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.contenedor-form-1 h2 {
+  font-family: 'Roboto Mono';
+  font-size: 30px;
+  margin-bottom: 15px;
+  margin-top: 30px;
+  color: rgba(1, 152, 117, 1);
+}
+
+.contenedor-form-1 .textos {
+  display: flex;
+  flex-direction: row;
+}
+
+.contenedor-form-1 .textos .cods {
+  background: rgba(46, 49, 49, 1);
+  color: rgba(46, 204, 113, 1);
+  font-size: 20px;
+  font-family: 'B612 Mono';
+  border: none;
+  width: 50%;
+  height: 150px;
+  text-align: center;
+}
+
+.contenedor-form-1 .textos #ingresar {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border: solid 4px rgba(30, 130, 76, 1);
+  margin-left: 10%;
+}
+
+.contenedor-form-1 .textos #salida {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: solid 4px rgba(30, 130, 76, 1);
+  border-left: none;
+  margin-right: 10%;
+}
+
+.contenedor-form-1 .boton {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  background: rgba(44, 62, 80, 1);
+  color: rgba(123, 239, 178, 1);
+  border: solid 2px rgba(46, 204, 113, 1);
+  font-size: 20px;
+  font-family: 'Roboto Mono';
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .4s ease;
+}
+
+.contenedor-form-1 .boton:hover {
+  background: rgba(52, 73, 94, 1);
+  color: rgba(123, 239, 178, 1);
+  transform: scale(1.1, 1.1);
+}
+
+/*Proceso de Decodificado*/
+
+.contenedor-form-2 {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: auto;
+  text-align: center;
+  background: rgba(36, 37, 42, 0.9);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.contenedor-form-2 h2 {
+  font-family: 'Roboto Mono';
+  font-size: 30px;
+  margin-bottom: 15px;
+  margin-top: 30px;
+  color: rgba(1, 152, 117, 1);
+}
+
+.contenedor-form-2 .textos {
+  display: flex;
+  flex-direction: row;
+}
+
+.contenedor-form-2 .textos .cods {
+  background: rgba(46, 49, 49, 1);
+  color: rgba(46, 204, 113, 1);
+  font-size: 20px;
+  font-family: 'B612 Mono';
+  border: none;
+  width: 50%;
+  height: 150px;
+  text-align: center;
+}
+
+.contenedor-form-2 .textos #ingresar-x {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border: solid 4px rgba(30, 130, 76, 1);
+  margin-left: 10%;
+}
+
+.contenedor-form-2 .textos #salida-x {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: solid 4px rgba(30, 130, 76, 1);
+  border-left: none;
+  margin-right: 10%;
+}
+
+.contenedor-form-2 .boton {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  background: rgba(44, 62, 80, 1);
+  color: rgba(123, 239, 178, 1);
+  border: solid 2px rgba(46, 204, 113, 1);
+  font-size: 20px;
+  font-family: 'Roboto Mono';
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .4s ease;
+}
+
+.contenedor-form-2 .boton:hover {
+  background: rgba(52, 73, 94, 1);
+  color: rgba(123, 239, 178, 1);
+  transform: scale(1.1, 1.1);
+}
+
+/**/

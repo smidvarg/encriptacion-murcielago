@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="../Recursos/bat-icon.png">
+    <title>BatCrypt | Encriptador Murciélago</title>
+    <link rel="stylesheet" href="../CSS/Murcielago.css">
+    <!--B612 Mono | Unica One-->
+    <link href="https://fonts.googleapis.com/css?family=B612+Mono|Unica+One&display=swap" rel="stylesheet">
+    <!--Audiowide | Roboto Mono-->
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Roboto+Mono&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!--Div general-->
+<div class="general">
+    <header>
+      <div class="titulo-nav">
+        <img src="../Recursos/bat-icon-b.png" alt="">
+        <h2>BatCrypt</h2>
+      </div>
+      <div class="lista">
+        <nav>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Comunicación</a></li>
+            <li><a href="#">Qué es la Codificación</a></li>
+            <li><a href="#">Cómo Funciona?</a></li>
+            <li><a href="#">Encriptar</a></li>
+            <li><a href="#">Desencriptar</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--Sección 1 Comunicación-->
+    <section class="comunicacion">
+        <img src="../Recursos/fist-bump.jpg">
+      <div class="sec-gen">
+        <h2>La Comunicación</h2>
+        <p>La acción de comunicar o comunicarse y la transmisión de señales mediante un código común al emisor y al receptor.</p>
+        <p>Los pasos básicos de la comunicación son la formación de una intención de comunicar, la composición del mensaje, la codificación del mensaje, la transmisión de la señal, la recepción de la señal, la decodificación del mensaje y finalmente, la interpretación del mensaje por parte de un receptor.</p>
+      </div>
+    </section>
+    <!--Codificar-->
+    <div class="contenedor-form-1">
+        <h2>Codificar un Texto</h2>
+    <form class="formulario">
+      <div class="textos">
+        <input type="text" name="ingresar" class="cods" id="ingresar" placeholder="Texto a codificar">
+        <input type="text" name="salida" class="cods" id="salida" placeholder="T5XT9 39D4F437D9">
+      </div>
+      <input type="button" name="boton" class="boton" id="boton" value="Codificar" onclick="codificar()">
+    </form>
+    </div>
+    <!--Decodificar-->
+    <div class="contenedor-form-2">
+        <h2>Decodificar un Texto</h2>
+    <form class="formulario">
+      <div class="textos">
+        <input type="text" name="ingresar" class="cods" id="ingresar-x" placeholder="T5XT9 7 D539D4F4372">
+        <input type="text" name="salida" class="cods" id="salida-x" placeholder="Texto Decodificado">
+      </div>
+      <input type="button" name="boton" class="boton" id="boton" value="Decodificar" onclick="decodificar()">
+    </form>
+    </div>
+    <!--Final del div general-->
+    </div>
+    <!--Script-->
+    <script type="text/javascript" src="../JS/bat-script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/*Inicio del general, secciones, y barra*/
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6em;
+  font-weight: bold;
+}
+
+section:nth-child(even) {
+  background: #efefef;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(34, 49, 63, 1);
+  text-align: center;
+  z-index: 1;
+}
+
+nav a {
+  position: relative;
+  color: rgba(35, 203, 167, 1);
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 1.6em;
+  display: inline-block;
+  font-family: 'Audiowide';
+}
+
+nav a:hover,
+section#one:hover ~ nav a[href="#one"],
+section#two:hover ~ nav a[href="#two"],
+section#three:hover ~ nav a[href="#three"],
+section#four:hover ~ nav a[href="#four"],
+section#five:hover ~ nav a[href="#five"] {
+  background: rgba(35, 203, 167, 1);
+  color: rgba(34, 49, 63, 1);
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+/*Inicio del encriptador*/
+
+.five {
+  background: url("../Recursos/Matrix.gif");
+  background-size: contain;
+}
+
+.contenedor-form-1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50vh;
+  text-align: center;
+  background: rgba(36, 37, 42, 0.9);
+  top: 0;
+  position: absolute;
+}
+
+.contenedor-form-1 h2 {
+  font-family: 'Roboto Mono';
+  font-size: 30px;
+  margin-bottom: 15px;
+  margin-top: 10vh;
+  color: rgba(1, 152, 117, 1);
+}
+
+.contenedor-form-1 .textos {
+  display: flex;
+  flex-direction: row;
+}
+
+.contenedor-form-1 .textos .cods {
+  background: rgba(46, 49, 49, 1);
+  color: rgba(46, 204, 113, 1);
+  font-size: 20px;
+  font-family: 'B612 Mono';
+  border: none;
+  width: 50%;
+  height: 150px;
+  text-align: center;
+}
+
+.contenedor-form-1 .textos #ingresar {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border: solid 4px rgba(30, 130, 76, 1);
+  margin-left: 10%;
+}
+
+.contenedor-form-1 .textos #salida {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: solid 4px rgba(30, 130, 76, 1);
+  border-left: none;
+  margin-right: 10%;
+}
+
+.contenedor-form-1 .boton {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  background: rgba(44, 62, 80, 1);
+  color: rgba(123, 239, 178, 1);
+  border: solid 2px rgba(46, 204, 113, 1);
+  font-size: 20px;
+  font-family: 'Roboto Mono';
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .4s ease;
+}
+
+.contenedor-form-1 .boton:hover {
+  background: rgba(52, 73, 94, 1);
+  color: rgba(123, 239, 178, 1);
+  transform: scale(1.1, 1.1);
+}
+
+/*Proceso de Decodificado*/
+
+.contenedor-form-2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50vh;
+  text-align: center;
+  background: rgba(36, 37, 42, 0.9);
+  bottom: 0;
+  position:absolute;
+}
+
+.contenedor-form-2 h2 {
+  font-family: 'Roboto Mono';
+  font-size: 30px;
+  margin-bottom: 15px;
+  margin-top: 30px;
+  color: rgba(1, 152, 117, 1);
+}
+
+.contenedor-form-2 .textos {
+  display: flex;
+  flex-direction: row;
+}
+
+.contenedor-form-2 .textos .cods {
+  background: rgba(46, 49, 49, 1);
+  color: rgba(46, 204, 113, 1);
+  font-size: 20px;
+  font-family: 'B612 Mono';
+  border: none;
+  width: 50%;
+  height: 150px;
+  text-align: center;
+}
+
+.contenedor-form-2 .textos #ingresar-x {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border: solid 4px rgba(30, 130, 76, 1);
+  margin-left: 10%;
+}
+
+.contenedor-form-2 .textos #salida-x {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: solid 4px rgba(30, 130, 76, 1);
+  border-left: none;
+  margin-right: 10%;
+}
+
+.contenedor-form-2 .boton {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  background: rgba(44, 62, 80, 1);
+  color: rgba(123, 239, 178, 1);
+  border: solid 2px rgba(46, 204, 113, 1);
+  font-size: 20px;
+  font-family: 'Roboto Mono';
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .4s ease;
+}
+
+.contenedor-form-2 .boton:hover {
+  background: rgba(52, 73, 94, 1);
+  color: rgba(123, 239, 178, 1);
+  transform: scale(1.1, 1.1);
+}
+
+/*------*/

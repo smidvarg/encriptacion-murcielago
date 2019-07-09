@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initail-scale=1.0, user-scalable=no">
+    <title>BatCrypt | Registro</title>
+    <link rel="icon" href="../Recursos/bat-icon.png">
+    <link rel="stylesheet" href="../CSS/Registro.css">
+    <link rel="stylesheet" href="../CSS/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--B612 Mono | Unica One-->
+    <link href="https://fonts.googleapis.com/css?family=B612+Mono|Unica+One&display=swap" rel="stylesheet">
+    <!--Audiowide | Roboto Mono-->
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Roboto+Mono&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="titulo-nav">
+        <img src="../Recursos/bat-icon-b.png" alt="">
+        <h2>BatCrypt <i class="fa fa-terminal" aria-hidden="true"></i></h2>
+      </div>
+    </header>
+    <div class="form-content">
+      <ul class="contenedor-tabs">
+        <li class="tab active"><a href="#iniciar-sesion">Iniciar Sesión</a></li>
+        <li class="tab"><a href="#registrarse">Registrarse</a></li>
+      </ul>
+      <div class="tab-contenido">
+        <!--Sección Iniciar Sesión-->
+        <div id="iniciar-sesion">
+          <h2>Iniciar Sesión</h2>
+          <form action="Murcielago_Beta.html" method="post">
+            <!--Usuario-->
+            <div class="contenedor-input">
+              <label for=""><i class="fa fa-user" aria-hidden="true"></i>Usuario</label>
+              <input type="text" required>
+            </div>
+            <!--Contraseña-->
+            <div class="contenedor-input">
+              <label for=""><i class="fa fa-unlock-alt" aria-hidden="true"></i>Contraseña</label>
+              <input type="password" required>
+            </div>
+              <p class="olvide"><a href="#">¿Se te olvidó la Contraseña?</a></p>
+              <input type="submit" class="boton" value="Iniciar Sesión">
+          </form>
+        </div>
+        <!--Sección Registrarse-->
+        <div id="registrarse">
+          <h2>Registrarse</h2>
+          <form action="#" method="post">
+            <div class="fila-arriba">
+              <!--Nombre-->
+              <div class="contenedor-input">
+                <label for=""><i class="fa fa-user" aria-hidden="true"></i>Nombre</label>
+                <input type="text" required>
+              </div>
+              <!--Apellido-->
+              <div class="contenedor-input">
+                <label for=""><i class="fa fa-user" aria-hidden="true"></i>Apellido</label>
+                <input type="text" required>
+              </div>
+              <!--Email-->
+              <div class="contenedor-input">
+                <label for=""><i class="fa fa-envelope" aria-hidden="true"></i>Email</label>
+                <input type="email" required>
+              </div>
+              <!--Contraseña-->
+              <div class="contenedor-input">
+                <label for=""><i class="fa fa-unlock-alt" aria-hidden="true"></i>Contraseña</label>
+                <input type="password" required>
+              </div>
+              <!--Repita la Contraseña-->
+              <div class="contenedor-input">
+                <label for=""><i class="fa fa-unlock-alt" aria-hidden="true"></i>Repetir Contraseña</label>
+                <input type="password" required>
+              </div>
+              <!--Región-->
+              <div class="contenedor-input">
+                <label for=""><i class="fa fa-globe" aria-hidden="true"></i>Región</label>
+                <select  id="region" required>
+                  <option value="America N">NorteAmerica</option>
+        					<option value="America C">Centro América</option>
+        					<option value="America S">SurAmerica</option>
+        					<option value="Asia">Asia</option>
+        					<option value="Oceania">Oceanía</option>
+        					<option value="Europa">Europa</option>
+                </select>
+              </div>
+              <!--Edad-->
+              <div class="contenedor-input">
+                <label for="" class="l-num"><i class="fa fa-tachometer" aria-hidden="true"></i>Edad</label>
+                <input class="numeros" type="number" min="0" max="100" required>
+              </div>
+              <input type="submit" class="boton" value="Registrarse">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="../JS/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../JS/registro.js"></script>
+  </body>
+</html>
