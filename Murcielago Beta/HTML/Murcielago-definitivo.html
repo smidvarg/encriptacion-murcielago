@@ -1,22 +1,89 @@
-<!-- Este código está bien ak7 estallado -->
-
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initail-scale=1.0, user-scalable=no">
     <link rel="icon" href="../Recursos/bat-icon.png">
     <title>BatCrypt | Encriptador Murciélago</title>
+    <link rel="stylesheet" href="../CSS/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../CSS/Murcielago-dx.css">
     <!--B612 Mono | Unica One-->
     <link href="https://fonts.googleapis.com/css?family=B612+Mono|Unica+One&display=swap" rel="stylesheet">
     <!--Audiowide | Roboto Mono-->
     <link href="https://fonts.googleapis.com/css?family=Audiowide|Roboto+Mono&display=swap" rel="stylesheet">
+    <!--Roboto-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   </head>
   <body>
-    <section id="one" class="one">Section one</section>
-    <section id="two" class="two">Section two</section>
-    <section id="three" class="three">Section three</section>
-    <section id="four" class="four">Section four</section>
+    <!--Sección Uno-->
+    <section id="one" class="one">
+      <div class="titulo">
+      <h2>La Comunicación y <br/> La Codificación</h2>
+    </div>
+  </section>
+  <!--Sección Dos-->
+    <section id="two" class="two">
+      <div class="titulo-2">
+        <h2><i class="fa fa-comments-o" aria-hidden="true"></i> La Comunicación</h2>
+      </div>
+      <div class="parrafo">
+        <p>Se entiende como el proceso por el que se transmite y recibe una información.</p>
+        <p>Los pasos básicos de la comunicación son: </p>
+          <ul class="lista">
+            <li><i class="fa fa-chevron-right" aria-hidden="true"></i> La formación de una intención de comunicar</li>
+            <li><i class="fa fa-chevron-right" aria-hidden="true"></i> La composición del mensaje</li>
+            <li><i class="fa fa-chevron-right" aria-hidden="true"></i> La codificación del mensaje</li>
+            <li><i class="fa fa-chevron-right" aria-hidden="true"></i> La transmisión de la señal</li>
+            <li><i class="fa fa-chevron-right" aria-hidden="true"></i> La recepción de la señal</li>
+            <li><i class="fa fa-chevron-right" aria-hidden="true"></i> La decodificación del mensaje</li>
+            <li><i class="fa fa-chevron-right" aria-hidden="true"></i> La interpretación del mensaje por parte de un receptor</li>
+          </ul>
+        <p>Actualmente la comunicación se ha desarrollado gracias a la tecnología, llamadas y mensajes a larga distancia, en un instante, los medios masivos como la radio, la televisión, que nos mantiene al tanto de lo que pasa en el mundo, las redes sociales son parte diaria del ser humano de hoy.</p>
+      </div>
+    </section>
+    <!--Sección Tres-->
+    <section id="three" class="three">
+      <div class="titulo-3">
+        <h2><i class="fa fa-low-vision" aria-hidden="true"></i> Codificación</h2>
+      </div>
+    </section>
+    <!--Sección Cuatro-->
+    <section id="four" class="four">
+      <div class="titulo-4">
+        <h2>Cómo Funciona <i class="fa fa-question-circle" aria-hidden="true"></i></h2>
+      </div>
+      <div class="articulo-4">
+        <p>Este es un tipo de encriptación llamado: "Clave Murciélago"</p>
+        <p>Funciona cambiando cada letra de la palabra murciélago por un número del 0-9.</p>
+        <table class="comparativa">
+          <tr class="tb-1">
+            <th>M</th>
+            <th>U</th>
+            <th>R</th>
+            <th>C</th>
+            <th>I</th>
+            <th>E</th>
+            <th>L</th>
+            <th>A</th>
+            <th>G</th>
+            <th>O</th>
+          </tr>
+          <tr class="tb-2">
+            <th>0</th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+            <th>7</th>
+            <th>8</th>
+            <th>9</th>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <!--Sección Cinco-->
     <section id="five" class="five">
       <div class="contenedor-form-1">
         <h2>Codificar un Texto</h2>
@@ -39,12 +106,16 @@
       <input type="button" name="boton" class="boton" id="boton" value="Decodificar" onclick="decodificar()">
     </form>
     </div></section>
+    <!--Barra de navegación-->
     <nav>
       <a href="#one">Inicio</a>
       <a href="#two">Comunicación</a>
       <a href="#three">Codificación</a>
-      <a href="#four">Cómo funciona</a>
+      <a href="#four">Cómo funciona?</a>
       <a href="#five">Encriptador</a>
     </nav>
+
+    <script type="text/javascript" src="../JS/bat-script.js"></script>
+    <script type="text/javascript" src="../JS/jquery-3.4.1.min.js"></script>
   </body>
 </html>

@@ -11,15 +11,13 @@ section {
   width: 100%;
   height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 6em;
   font-weight: bold;
 }
 
-section:nth-child(even) {
+/*section:nth-child(even) {
   background: #efefef;
-}
+}*/
 
 nav {
   position: fixed;
@@ -204,3 +202,118 @@ section#five:hover ~ nav a[href="#five"] {
 }
 
 /*------*/
+
+.one {
+  background: url("../Recursos/Google-server.jpg");
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.one .titulo {
+  display: flex;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+.one h2 {
+  padding: 20px;
+  font-size: 140px;
+  font-family: 'Unica One';
+  color: rgba(189, 195, 199, 1);
+}
+
+.two {
+  background: rgba(46, 49, 49, 1);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.two .titulo-2 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-family: 'B612 Mono';
+  font-size: 50px;
+  padding: 15px;
+}
+
+.two .titulo-2 h2 {
+  color: rgba(232, 236, 241, 1);
+}
+
+.two .parrafo {
+  width: 95%;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 2vh;
+}
+
+.two .parrafo p {
+  padding: 20px;
+  font-size: 30px;
+  font-family: 'Roboto';
+  justify-content: center;
+  text-align: justify;
+  color: rgba(236, 240, 241, 1);
+}
+
+.two .parrafo ul li {
+  padding: 5px;
+  font-size: 30px;
+  font-family: 'Roboto';
+  justify-content: center;
+  text-align: justify;
+  color: rgba(236, 240, 241, 1);
+  list-style: none;
+}
+
+.three {
+  background: url("../Recursos/fondo-codigo-2.jpg");
+  background-size: cover;
+}
+
+.four {
+  background: rgba(36, 37, 42, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.four .titulo-4 {
+  font-size: 50px;
+  font-family: 'B612 Mono';
+  color: rgba(35, 203, 167, 1);
+}
+
+.four .articulo-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.four .articulo-4 p {
+  font-size: 35px;
+  font-family: 'Roboto';
+  color: rgba(101, 198, 187, 1);
+  text-align: center;
+  padding: 2.5px;
+}
+
+.four .comparativa {
+  border-radius: 10px;
+}
+
+.four .tb-1 th {
+  border: solid 2px rgba(35, 203, 167, 1);
+  border-radius: 10px;
+  background: rgba(52, 73, 94, 1);
+}

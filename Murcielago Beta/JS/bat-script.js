@@ -87,3 +87,5 @@ function decodificar() {
     document.getElementById('salida-x').value = decoder("");
   }
 }
+
+//Siguientes scripts para la página
